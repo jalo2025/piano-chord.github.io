@@ -1,0 +1,110 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+<script src="piano.js"></script>
+<link rel="stylesheet" type="text/css" href="piano.css">
+    </head>
+<body>
+
+<ul id='piano'>   
+<li class="white f"></li>
+<li class="black fs"></li>
+<li class="white g"></li>
+<li class="black gs"></li>
+<li class="white a"></li>
+<li class="black as"></li>
+<li class="white b"></li>
+    
+<li class="white c"></li>
+<li class="black cs"></li>
+<li class="white d"></li>
+<li class="black ds"></li>
+<li class="white e" ></li>
+<li class="white f"></li>
+<li class="black fs"></li>
+<li class="white g"></li>
+<li class="black gs"></li>
+<li class="white a"></li>
+<li class="black as"></li>
+<li class="white b"></li>
+    
+<li class="white c"></li>
+<li class="black cs"></li>
+<li class="white d"></li>
+<li class="black ds"></li>
+<li class="white e" ></li>
+<li class="white f"></li>
+<li class="black fs"></li>
+<li class="white g"></li>
+<li class="black gs"></li>
+<li class="white a"></li>
+<li class="black as"></li>
+<li class="white b"></li>
+    
+<li class="white c"></li>
+<li class="black cs"></li>
+<li class="white d"></li>
+<li class="black ds"></li>
+<li class="white e"></li>
+    
+<li class="white f"></li>
+<li class="black fs"></li>
+<li class="white g"></li>
+<li class="black gs"></li>
+<li class="white a"></li>
+<li class="black as"></li>
+<li class="white b"></li>
+<li class="white c"></li>
+<li class="black cs"></li>
+<li class="white d"></li>
+<li class="black ds"></li>
+<li class="white e"></li>
+
+    
+<li class="white f"></li>
+<li class="black fs"></li>
+<li class="white g"></li>
+<li class="black gs"></li>
+<li class="white a"></li>
+<li class="black as"></li>
+<li class="white b"></li>
+<li class="white c"></li>
+<li class="black cs"></li>
+<li class="white d"></li>
+<li class="black ds"></li>
+<li class="white e"></li>
+</ul>
+ <div style="clear:both"></div>
+<div id='toc'>Major : 
+<a class='tocx' onclick="showChart('C')">C</a>
+<a class='tocx' onclick="showChart('G')">G</a>
+<a class='tocx' onclick="showChart('F')">F</a>
+<a class='tocx' onclick="showChart('D')">D</a>
+<a class='tocx' onclick="showChart('Bb')">B<sup>&flat;</sup></a> 
+<a class='tocx' onclick="showChart('A')">A</a> 
+<a class='tocx' onclick="showChart('Eb')">E<sup>&flat;</sup></a> 
+<a class='tocx' onclick="showChart('E')">E</a> 
+<a class='tocx' onclick="showChart('Ab')">A<sup>&flat;</sup></a> 
+<a class='tocx' onclick="showChart('B')">B</a> 
+<a class='tocx' onclick="showChart('Db')">D<sup>&flat;</sup></a> 
+<a class='tocx' onclick="showChart('Gb')">G<sup>&flat;</sup></a> 
+    </div>  
+<div id='showChord'></div>
+
+    
+<div id='allChords'></div>
+
+    <script>
+    
+   
+function showChart(keys){
+    
+$("div").removeClass("displayAllChords");    
+var element = document.getElementById(keys);
+ element.classList.toggle("displayAllChords");
+}//showChart
+    
+    </script>
+
+    </body></html>
