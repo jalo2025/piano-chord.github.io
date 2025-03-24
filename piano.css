@@ -1,0 +1,95 @@
+* {
+  box-sizing:border-box;  margin:0;font-family:sans-serif;font-size:1.0em;
+}
+
+body {
+  margin:0;
+}
+
+ul {
+  margin:0em ;
+  padding:0 0 0 1.5em;
+    height:15em; width:*;background: rgb(255,255,255);
+
+    }
+
+li {
+  margin:0;
+  padding:0 ;
+  list-style:none;
+  position:relative;
+  float:left;
+}
+
+.white {
+  height:12em;
+  width:2.1em;
+  z-index:1;
+  padding:0 0 0.5em 0.5em;
+  border-left:1px solid #ccc;
+  border-bottom:1px solid #bbb;
+  border-radius:0 0 2px 2px;
+  box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 2px 3px rgba(0,0,0,0.4);
+  background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+}
+.a,.g,.d,.e,.b { margin:0 0 0 -0.625em }   
+
+.black {
+  height:7.5em;
+  width:1.35em;
+  margin:0 0 0 -0.625em;
+  padding:0 0 0 0.04em;
+  z-index:2;
+  border:1px solid #000;
+  border-radius:0 0 3px 3px;
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+  background:linear-gradient(45deg,#222 0%,#555 100%)
+}
+ul .keyActive{
+  background:#80CDC1;border:1px solid #31865E;
+  box-shadow:-1px -1px 2px rgba(199,234,229,0.2) inset,0 -5px 2px 3px rgba(83,180,180,0.6) inset,0 2px 4px rgba(50,150,150,0.5);
+    padding-bottom:15px;
+  display: flex;
+  align-items: flex-end;
+  }
+    
+ul .keyActiveR{
+  background:#A6D96A;border:1px solid #549810;
+  box-shadow:-1px -1px 2px rgba(50,180,50,0.2) inset,0 -5px 2px 3px rgba(150,200,30,0.6) inset,0 2px 4px rgba(60,150,20,0.5);
+    padding-bottom:15px;
+  display: flex;
+  align-items: flex-end;
+  }
+    
+ul li:active {
+  border:1px solid #D963A2;
+  box-shadow:2px 0 3px rgba(225,70,150,0.1) inset,-5px 5px 20px rgba(250,100,150,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+  background:#DE77AE;
+}
+#toc,#showChord,#allChords{padding:20px;width:1200px;position:absolute; }
+#showChord {top:250px; }
+
+.chartMaj{display:none;}
+.displayAllChords{display:block}
+
+#toc {left:10;top:180px;height:80px;font-size:1.2em;color:#444444;
+    font-weight:normal;font-family:Helvetica;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 1),
+               5px 4px 3px rgba(0, 0, 0, 0.2);}   
+
+.tocx{display:inline-block;width:40px;height:40px;}
+
+#allChords {left:30px;top:250px;height:500px;border:1px solid black;
+    position:absolute;
+    overflow: auto;  /* code added */}
+
+div.cxrow{margin:0;
+  display: flex;
+   flex-direction: row;}
+u{display:block; font-size:1.5em;font-weight:bold;color:#DD0000 ;padding-bottom:8px;}
+div.cx{font-size:1.0em; float:left;display:inline-flex;padding:5px;
+    border:1px solid #cCCCCC;width:90px;height:30px;}
+div.cxb {font-weight:bold; background-color:#FF9999;border:1px solid #DD6666}
+div.cxc {font-weight:bold;background-color:#FFCCCC;border:1px solid #EE9999 }
+div.cxd {font-weight:bold;background-color:#FFEEEE;border:1px solid #EEAAAA }
+sup{font-size:0.8em;margin-left:-3px;margin-right:-5px;margin-top:-3px}
